@@ -1,0 +1,6 @@
+{
+    "require": {
+        "mikehaertl/phpwkhtmltopdf": "^2.1",
+        "sendgrid/sendgrid": "^4.0"
+    }
+}
