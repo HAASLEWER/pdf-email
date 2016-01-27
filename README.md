@@ -1,7 +1,7 @@
 # pdf-email
 
 # Dependencies
-curl
+curl<br />
 composer -> https://getcomposer.org/
 
 #Composer Dependencies
