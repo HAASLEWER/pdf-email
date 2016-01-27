@@ -9,5 +9,5 @@ composer -> https://getcomposer.org/
 	-> sendgrid/sendgrid
 
 # Installation
-git clone git@github.com:HAASLEWER/pdf-email.git
+git clone git@github.com:HAASLEWER/pdf-email.git<br />
 composer install
