@@ -65,7 +65,7 @@ if (!$pdf->saveAs($file_path)) {
     die();
 } else {   
     // The pdf has successfully been created, send the email with the pdf attached
-    $sendgrid = new SendGrid('SENDGRID_APIKEY');
+    $sendgrid = new SendGrid('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');
     $email = new SendGrid\Email();
     $email
         ->addTo($email_to)
