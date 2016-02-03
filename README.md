@@ -1,8 +1,10 @@
 # pdf-email
 
-# Dependencies
+# OS Dependencies
 curl<br />
 composer -> https://getcomposer.org/
+
+wkhtmltopdf -> http://wkhtmltopdf.org/downloads.html
 
 #Composer Dependencies
 	-> mikehaertl/phpwkhtmltopdf
