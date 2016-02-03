@@ -9,7 +9,7 @@ $customer_id = $_GET["customer_id"];
 $invoice_id = $_GET["invoice_id"];
 $email_to = "ehattingh@gmail.com";
 $email_from = "ehattingh@gmail.com";
-$file_path = 'tmp/' . $invoice_id. '_' . $customer_id . '.pdf';
+$file_path = $invoice_id. '_' . $customer_id . '.pdf';
 
 // Generate HTML and convert to PDF
 $pdf = new Pdf();
@@ -73,7 +73,7 @@ if (!$pdf->saveAs($file_path)) {
         ->setSubject('Invoice: ' . $invoice_id . ' for customer: ' . $customer_id)
         ->setText('Hi, Please find attached your requested invoice.')
         ->setHtml('Hi, <br /><br />Please find attached your requested invoice.')
-        ->addAttachment($file_path);
+        ->addAttachment(__DIR__ . '\\' . $file_path);
 
     try {
         // Send the email
